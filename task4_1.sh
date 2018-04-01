@@ -36,3 +36,4 @@ echo Users logged in: `who | wc -l` >> $FILE_NAME
 echo --- Network --- >> $FILE_NAME
 ip -o -4 a | awk '{print $2":",$4}'  >> $FILE_NAME
 
+exit 0
